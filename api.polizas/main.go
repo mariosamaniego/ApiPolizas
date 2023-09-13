@@ -43,17 +43,14 @@ func main() {
 func CORS(next http.Handler) http.Handler {
 	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 		log.Printf("Inicio Main::CORS")
-		// Set headers
 		(w).Header().Set("Content-Type", "application/json")
 		w.Header().Set("Content-Type", "text/html; charset=utf-8")
-		//w.Header().Set("Access-Control-Allow-Origin", "http://localhost:4200")
 		w.Header().Set("Access-Control-Allow-Origin", "*")
 		w.Header().Set("Access-Control-Allow-Methods", "GET, HEAD, OPTIONS, POST, PUT, DELETE")
 		(w).Header().Set("Access-Control-Allow-Headers", "Accept, Content-Type, Content-Length, Accept-Encoding, X-CSRF-Token, Authorization")
 
 		fmt.Println("cors")
 
-		// Next
 		next.ServeHTTP(w, r)
 		log.Printf("Finaliza Main::CORS")
 	})
@@ -69,7 +66,6 @@ func Token(next http.Handler) http.Handler {
 		method := "POST"
 		payload := strings.NewReader(``)
 
-		// Crear una nueva solicitud HTTP POST
 		req, err := http.NewRequest(method, urlsso, payload)
 		if err != nil {
 			fmt.Println(err)

@@ -10,14 +10,13 @@ import (
 
 func ConsultarEmpleados() entities.Empleados {
 	log.Printf("Inicio EmpleadosService::ConsultarEmpleados")
-	// Conectarse a la base de datos
+
 	db, err := sql.Open("postgres", urlPostgress)
 	if err != nil {
 		log.Fatal(err)
 	}
 	defer db.Close()
 
-	// Ejecutar la consulta a la función de PostgreSQL
 	rows, err := db.Query("SELECT idempleado,nombre,apellido,puesto FROM fun_consultaempleados()")
 	if err != nil {
 		log.Fatal("Error en la fun_consultaempleados")
@@ -27,7 +26,6 @@ func ConsultarEmpleados() entities.Empleados {
 	defer rows.Close()
 	empleados := entities.Empleados{}
 
-	// Recorrer los resultados
 	for rows.Next() {
 		empleado := entities.Empleado{}
 		err := rows.Scan(&empleado.IdEmpleado, &empleado.Nombre, &empleado.Apellido, &empleado.Puesto)
@@ -94,13 +92,13 @@ func AgregarEmpleado(idempleado int, nombre string, apellido string, puesto stri
 
 func EliminarGeneral(opcion int, eliminar int) entities.Mensaje {
 	log.Printf("Inicio EmpleadosService::EliminarGeneral")
-	// Conectarse a la base de datos
+
 	db, err := sql.Open("postgres", urlPostgress)
 	if err != nil {
 		log.Fatal(err)
 	}
 	defer db.Close()
-	// Ejecutar la consulta a la función de PostgreSQL
+
 	rows, err := db.Query("SELECT fun_eliminargeneral FROM fun_eliminargeneral($1::INTEGER,$2::INTEGER)", opcion, eliminar)
 	if err != nil {
 		log.Printf("Error al ejecutar la funcion fun_eliminargeneral()")
@@ -110,7 +108,7 @@ func EliminarGeneral(opcion int, eliminar int) entities.Mensaje {
 	defer rows.Close()
 	var irespuesta int32
 	mensaje := entities.Mensaje{}
-	// Recorrer los resultados
+
 	if rows.Next() {
 
 		err := rows.Scan(&irespuesta)

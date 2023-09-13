@@ -15,7 +15,6 @@ var response entities.Response
 func ConsultarPoliza(idpoliza int) entities.PolizasResponse {
 	log.Printf("Inicio PolizasService::ConsultarPoliza")
 
-	// Conectarse a la base de datos
 	db, err := sql.Open("postgres", urlPostgress)
 	if err != nil {
 		log.Printf("Error al conectarse a la base de datos")
@@ -24,7 +23,6 @@ func ConsultarPoliza(idpoliza int) entities.PolizasResponse {
 	}
 	defer db.Close()
 
-	// Ejecutar la consulta a la función de PostgreSQL
 	rows, err := db.Query("SELECT id_polizas, empleado_genero, sku, cantidad, nombre,  apellido, puesto from fun_consultapoliza($1::INTEGER)", idpoliza)
 	if err != nil {
 		log.Printf("Error al ejecutar la funcion fun_consultapoliza()")
@@ -33,11 +31,9 @@ func ConsultarPoliza(idpoliza int) entities.PolizasResponse {
 	}
 	defer rows.Close()
 
-	//polizas := entities.Polizas{}
 	poliza := entities.Poliza{}
 	empleado := entities.Empleado{}
 
-	// Recorrer los resultados
 	if rows.Next() {
 
 		err := rows.Scan(&poliza.IdPoliza, &poliza.EmpleadoGenero, &poliza.Sku, &poliza.Cantidad, &empleado.Nombre, &empleado.Apellido, &empleado.Puesto)
@@ -72,7 +68,6 @@ func ConsultarPoliza(idpoliza int) entities.PolizasResponse {
 func ConsultarPolizasEmpleado(idempleado int) entities.PolizasResponse2 {
 	log.Printf("Inicio PolizasService::ConsultarPolizasEmpleado")
 
-	// Conectarse a la base de datos
 	db, err := sql.Open("postgres", urlPostgress)
 	if err != nil {
 		log.Printf("Error al conectarse a la base de datos")
@@ -81,7 +76,6 @@ func ConsultarPolizasEmpleado(idempleado int) entities.PolizasResponse2 {
 	}
 	defer db.Close()
 
-	// Ejecutar la consulta a la función de PostgreSQL
 	rows, err := db.Query("SELECT id_polizas,empleado_genero, sku, cantidad, nombre,apellido, puesto FROM fun_consultapolizasempleado($1::INTEGER)", idempleado)
 	if err != nil {
 		log.Printf("Error al ejecutar la funcion fun_consultapolizasempleado()")
@@ -91,7 +85,6 @@ func ConsultarPolizasEmpleado(idempleado int) entities.PolizasResponse2 {
 	defer rows.Close()
 
 	polizasresponse2 := entities.PolizasResponse2{}
-	// Recorrer los resultados
 	for rows.Next() {
 		polizasresponse := entities.PolizasResponse{}
 		err := rows.Scan(&polizasresponse.Poliza.IdPoliza,

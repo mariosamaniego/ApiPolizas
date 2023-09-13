@@ -4,10 +4,11 @@ import (
 	"encoding/json"
 	"fmt"
 	"io/ioutil"
-	entities "main.go/entities"
 	"net/http"
 	"os"
 	"strings"
+
+	entities "main.go/entities"
 )
 
 var urlsso = os.Getenv("sso")
@@ -17,7 +18,6 @@ func ValidarToken(token string) entities.ResponseSSO {
 	method := "POST"
 	payload := strings.NewReader(``)
 
-	// Crear una nueva solicitud HTTP POST
 	req, err := http.NewRequest(method, urlsso, payload)
 	if err != nil {
 		fmt.Println(err)
