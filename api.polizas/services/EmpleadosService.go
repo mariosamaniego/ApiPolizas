@@ -13,13 +13,13 @@ func ConsultarEmpleados() entities.Empleados {
 
 	db, err := sql.Open("postgres", urlPostgress)
 	if err != nil {
-		log.Fatal(err)
+		log.Printf("Error conexion", err)
 	}
 	defer db.Close()
 
 	rows, err := db.Query("SELECT idempleado,nombre,apellido,puesto FROM fun_consultaempleados()")
 	if err != nil {
-		log.Fatal("Error en la fun_consultaempleados")
+		log.Printf("Error en la fun_consultaempleados")
 		return entities.Empleados{}
 
 	}
@@ -32,14 +32,14 @@ func ConsultarEmpleados() entities.Empleados {
 		empleados = append(empleados, empleado)
 
 		if err != nil {
-			log.Fatal(err)
+			log.Printf("", err)
 			return empleados
 		}
 
 	}
 
 	if err = rows.Err(); err != nil {
-		log.Fatal(err)
+		log.Printf("", err)
 		return empleados
 	}
 	log.Printf("Fin EmpleadosService::ConsultarEmpleados")
@@ -54,7 +54,7 @@ func AgregarEmpleado(idempleado int, nombre string, apellido string, puesto stri
 	mensaje := entities.Mensaje{}
 	db, err := sql.Open("postgres", urlPostgress)
 	if err != nil {
-		log.Fatal(err)
+		log.Printf("", err)
 	}
 	defer db.Close()
 
@@ -95,7 +95,7 @@ func EliminarGeneral(opcion int, eliminar int) entities.Mensaje {
 
 	db, err := sql.Open("postgres", urlPostgress)
 	if err != nil {
-		log.Fatal(err)
+		log.Printf("", err)
 	}
 	defer db.Close()
 

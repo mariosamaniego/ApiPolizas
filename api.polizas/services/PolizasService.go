@@ -97,7 +97,7 @@ func ConsultarPolizasEmpleado(idempleado int) entities.PolizasResponse2 {
 		polizasresponse.Empleado.IdEmpleado = polizasresponse.Poliza.EmpleadoGenero
 		polizasresponse2 = append(polizasresponse2, polizasresponse)
 		if err != nil {
-			log.Fatal(err)
+			log.Printf("Error Rows", err)
 			return polizasresponse2
 		}
 
@@ -115,7 +115,7 @@ func AgregarPoliza(idpoliza int, idempleado int, sku int, cantidad int) entities
 
 	db, err := sql.Open("postgres", urlPostgress)
 	if err != nil {
-		log.Fatal(err)
+		log.Printf("Error Conexion", err)
 	}
 	defer db.Close()
 
@@ -170,7 +170,7 @@ func ActualizarPoliza(idpoliza int, IdEmpleado int, sku int, cantidad int, nombr
 
 	db, err := sql.Open("postgres", urlPostgress)
 	if err != nil {
-		log.Fatal(err)
+		log.Printf("Error conexion", err)
 	}
 	defer db.Close()
 

@@ -9,7 +9,7 @@
             "type": "go",
             "request": "launch",
             "mode": "exec",
-            "program": "C:/Users/mario.samaniego/Documents/CursoGo/Crud/api.polizas/main.go.exe",//"${fileDirname}",
+            "program": "C:/Users/mario.samaniego/Documents/CursoGo/GIT/ApiPolizas/api.polizas/main.go.exe",//"${fileDirname}",
 			"env":{
 				"urlPostgress":"postgres://postgres:admin@localhost:5432/postgres?sslmode=disable",
                 "sso": "https://apigateway.coppel.com:58443/sso-dev/api/v1/verify"

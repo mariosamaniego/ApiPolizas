@@ -17,7 +17,7 @@ import (
 func main() {
 	file, err := os.OpenFile("logPolizas.txt", os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0666)
 	if err != nil {
-		log.Fatalf("%s Fatal: Fatal Error Signal")
+		log.Printf("%s Fatal: Fatal Error Signal")
 	}
 	defer file.Close()
 	log.SetOutput(file)
@@ -37,16 +37,16 @@ func main() {
 	mux.HandleFunc(path+"/Eliminar", handlers.EliminarGeneral).Methods("POST", "OPTIONS")
 	mux.HandleFunc(path+"/ActualizarPoliza", handlers.ActualizarPoliza).Methods("POST", "OPTIONS")
 
-	log.Fatal(http.ListenAndServe("10.59.21.109:3000", mux))
+	log.Printf("%s", http.ListenAndServe("10.59.21.109:3000", mux))
 }
 
 func CORS(next http.Handler) http.Handler {
 	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 		log.Printf("Inicio Main::CORS")
 		(w).Header().Set("Content-Type", "application/json")
-		w.Header().Set("Content-Type", "text/html; charset=utf-8")
-		w.Header().Set("Access-Control-Allow-Origin", "*")
-		w.Header().Set("Access-Control-Allow-Methods", "GET, HEAD, OPTIONS, POST, PUT, DELETE")
+		(w).Header().Set("Content-Type", "text/html; charset=utf-8")
+		(w).Header().Set("Access-Control-Allow-Origin", "*")
+		(w).Header().Set("Access-Control-Allow-Methods", "GET, HEAD, OPTIONS, POST, PUT, DELETE")
 		(w).Header().Set("Access-Control-Allow-Headers", "Accept, Content-Type, Content-Length, Accept-Encoding, X-CSRF-Token, Authorization")
 
 		fmt.Println("cors")
