@@ -126,6 +126,7 @@ func EliminarGeneral(opcion int, eliminar int) entities.Mensaje {
 		} else {
 			mensaje.Respuesta = "Error al Eliminar Registro"
 		}
+		log.Printf("Respuesta de la consulta %s", mensaje.Respuesta)
 
 		log.Printf("Termina EmpleadosService::EliminarGeneral")
 

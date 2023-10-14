@@ -154,6 +154,7 @@ func AgregarPoliza(idpoliza int, idempleado int, sku int, cantidad int) entities
 			mensaje.StatusRespuesta = 1
 		} else {
 			mensaje.StatusRespuesta = 0
+			log.Printf("Error al añadir la poliza %s", mensaje.Respuesta)
 		}
 
 		log.Printf("Termina PolizasService::AgregarPoliza")
@@ -211,6 +212,7 @@ func ActualizarPoliza(idpoliza int, IdEmpleado int, sku int, cantidad int, nombr
 			mensaje.StatusRespuesta = 1
 		} else {
 			mensaje.StatusRespuesta = 0
+			log.Printf("Error al actualizar la poliza %s", mensaje.Respuesta)
 		}
 
 		log.Printf("Termina PolizasService::ActualizarPoliza")
