@@ -1,0 +1,41 @@
+body {
+  width: 800px;
+}
+
+.polizas-section-body {
+  display: grid;
+  grid-template-columns: repeat(3, 10rem);
+  justify-content: space-between;
+  gap: 3rem;
+  padding: 1rem 2rem;
+}
+
+.tarjeta-poliza {
+  background-color: #1b1d1f;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  color: #fff;
+  transition: 0.5s ease;
+}
+
+.tarjeta-poliza:hover {
+  transform: scale(1.1);
+}
+
+.tarjeta-poliza-header h6 {
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 0.2rem;
+}
+
+.tarjeta-poliza-body {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.tarjeta-poliza-body p {
+  font-size: 10px;
+}

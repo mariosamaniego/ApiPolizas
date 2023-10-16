@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="articulos">
+      <div class="articulos-section-header">
+        <h4 class="section-title">Articulos</h4>
+      </div>
+      <div class="articulos-section-body section-body">
+        <table class="articulos-table section-table" *ngIf="articulosData != 0">
+          <thead>
+            <tr>
+              <th>Sku</th>
+              <th>Nombre</th>
+              <th>Cantidad</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let articulo of articulosData">
+              <td>{{ articulo.Sku }}</td>
+              <td>{{ articulo.Nombre }}</td>
+              <td>{{ articulo.Cantidad }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="articulos-section-footer"></div>
+    </section>
+  </body>
+</html>

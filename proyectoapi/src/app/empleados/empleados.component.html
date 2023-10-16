@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proyeto Polizas</title>
+  </head>
+  <body>
+    <section class="seccion-empleados" *ngIf="seccionOculta">
+      <div class="seccion-header">
+        <h4 *ngIf="mostrarEncabezado">Empleados</h4>
+      </div>
+
+      <section class="seccion-empleados-body" *ngIf="tablaVisible">
+        <table class="seccion empleados-tabla">
+          <thead>
+            <tr>
+              <th>Nombre</th>
+              <th>Apellido</th>
+              <th>Puesto</th>
+              <th>Id</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr
+              *ngFor="let empleado of empleadosData"
+              [routerLink]="[
+                '/polizas',
+                empleado.IdEmpleado,
+                empleado.Nombre.trim()
+              ]"
+              class="table-hover"
+              (click)="ocultarSeccion()"
+            >
+              <td>{{ empleado.Nombre }}</td>
+              <td>{{ empleado.Apellido }}</td>
+              <td>{{ empleado.Puesto }}</td>
+              <td>{{ empleado.IdEmpleado }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </section>
+  </body>
+</html>

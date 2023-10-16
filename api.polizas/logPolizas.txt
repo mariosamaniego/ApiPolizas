@@ -1,0 +1,256 @@
+2023/09/13 22:37:06 Inicio del api.polizas
+2023/09/13 22:37:06 listen tcp 10.59.21.109:3000: bind: The requested address is not valid in its context.
+2023/09/13 22:37:39 Inicio del api.polizas
+2023/09/13 22:37:39 listen tcp 10.59.21.109:3000: bind: The requested address is not valid in its context.
+2023/09/13 22:40:32 Inicio del api.polizas
+2023/09/13 22:40:32 listen tcp 10.59.21.109:3000: bind: The requested address is not valid in its context.
+2023/09/13 22:41:15 Inicio del api.polizas
+2023/09/13 22:41:15 listen tcp 10.59.21.109:3000: bind: The requested address is not valid in its context.
+2023/09/13 22:41:28 Inicio del api.polizas
+2023/09/13 22:41:35 Inicio Main::CORS
+2023/09/13 22:41:35 Inicio Main::Token
+2023/09/13 22:41:36 %!s(<nil>)
+2023/09/13 22:41:36 Finaliza Main::CORS
+2023/09/13 22:42:11 Inicio Main::CORS
+2023/09/13 22:42:11 Inicio Main::Token
+2023/09/13 22:42:11 %!s(<nil>)
+2023/09/13 22:42:11 Finaliza Main::CORS
+2023/09/13 22:42:33 Inicio Main::CORS
+2023/09/13 22:42:33 Inicio Main::Token
+2023/09/13 22:42:33 Inicio ArticulosHandler::ConsultarArticulos
+2023/09/13 22:42:33 Inicio ArticulosService::ConsultarArticulos
+2023/09/13 22:42:34 Fin ArticulosService::ConsultarEmpleados
+2023/09/13 22:42:34 Fin ArticulosHandler::ConsultarArticulos
+2023/09/13 22:42:34 Termina Main::Token
+2023/09/13 22:42:34 Finaliza Main::CORS
+2023/09/13 22:43:07 Inicio Main::CORS
+2023/09/13 22:43:07 Inicio Main::Token
+2023/09/13 22:43:07 Inicio EmpleadosHandler::ConsultarEmpleados
+2023/09/13 22:43:07 Inicio EmpleadosService::ConsultarEmpleados
+2023/09/13 22:43:07 Fin EmpleadosService::ConsultarEmpleados
+2023/09/13 22:43:07 Fin EmpleadosHandler::ConsultarEmpleados
+2023/09/13 22:43:07 Termina Main::Token
+2023/09/13 22:43:07 Finaliza Main::CORS
+2023/09/13 22:43:20 Inicio Main::CORS
+2023/09/13 22:43:20 Inicio Main::Token
+2023/09/13 22:43:20 Inicio PolizasHandler::ConsultarPolizasEmpleado
+2023/09/13 22:43:20 Inicio PolizasService::ConsultarPolizasEmpleado
+2023/09/13 22:43:20 Fin PolizasHandler::ConsultarPolizasEmpleado
+2023/09/13 22:43:20 Termina Main::Token
+2023/09/13 22:43:20 Finaliza Main::CORS
+2023/09/13 22:43:29 Inicio Main::CORS
+2023/09/13 22:43:29 Inicio Main::Token
+2023/09/13 22:43:29 Inicio PolizasHandler::ConsultarPolizasEmpleado
+2023/09/13 22:43:29 Inicio PolizasService::ConsultarPolizasEmpleado
+2023/09/13 22:43:30 Fin PolizasHandler::ConsultarPolizasEmpleado
+2023/09/13 22:43:30 Termina Main::Token
+2023/09/13 22:43:30 Finaliza Main::CORS
+2023/09/13 22:44:20 Inicio Main::CORS
+2023/09/13 22:44:20 Inicio Main::Token
+2023/09/13 22:44:20 Inicio PolizasHandler::ConsultarPoliza
+2023/09/13 22:44:20 Inicio PolizasService::ConsultarPoliza
+2023/09/13 22:44:20 Termina PolizasService::ConsultarPoliza
+2023/09/13 22:44:20 Fin PolizasHandler::ConsultarPoliza
+2023/09/13 22:44:20 Termina Main::Token
+2023/09/13 22:44:20 Finaliza Main::CORS
+2023/09/13 22:49:30 Inicio Main::CORS
+2023/09/13 22:49:30 Inicio Main::Token
+2023/09/13 22:49:33 Inicio EmpleadosHandler::AgregarEmpleado
+2023/09/13 22:49:33 Inicio EmpleadosService::AgregarEmpleado
+2023/09/13 22:49:33 Error al registrar al empleado,Empleado ya existe
+2023/09/13 22:49:33 Termina EmpleadosService::AgregarEmpleado
+2023/09/13 22:49:33 Fin EmpleadosHandler::AgregarEmpleado
+2023/09/13 22:49:33 Termina Main::Token
+2023/09/13 22:49:33 Finaliza Main::CORS
+2023/09/13 22:49:42 Inicio Main::CORS
+2023/09/13 22:49:42 Inicio Main::Token
+2023/09/13 22:49:42 Inicio EmpleadosHandler::AgregarEmpleado
+2023/09/13 22:49:42 Inicio EmpleadosService::AgregarEmpleado
+2023/09/13 22:49:43 Termina EmpleadosService::AgregarEmpleado
+2023/09/13 22:49:43 Fin EmpleadosHandler::AgregarEmpleado
+2023/09/13 22:49:43 Termina Main::Token
+2023/09/13 22:49:43 Finaliza Main::CORS
+2023/09/13 22:51:24 Inicio Main::CORS
+2023/09/13 22:51:24 Inicio Main::Token
+2023/09/13 22:51:24 Inicio PolizasHandler::AgregarPoliza
+2023/09/13 22:51:24 Inicio PolizasService::AgregarPoliza
+2023/09/13 22:51:24 Termina PolizasService::AgregarPoliza
+2023/09/13 22:51:24 Fin PolizasHandler::AgregarPoliza
+2023/09/13 22:51:24 Termina Main::Token
+2023/09/13 22:51:24 Finaliza Main::CORS
+2023/09/13 22:52:39 Inicio Main::CORS
+2023/09/13 22:52:39 Inicio Main::Token
+2023/09/13 22:52:39 Inicio PolizasHandler::AgregarPoliza
+2023/09/13 22:52:39 Inicio PolizasService::AgregarPoliza
+2023/09/13 22:52:39 Termina PolizasService::AgregarPoliza
+2023/09/13 22:52:39 Fin PolizasHandler::AgregarPoliza
+2023/09/13 22:52:39 Termina Main::Token
+2023/09/13 22:52:39 Finaliza Main::CORS
+2023/09/13 22:52:46 Inicio Main::CORS
+2023/09/13 22:52:46 Inicio Main::Token
+2023/09/13 22:52:46 Inicio PolizasHandler::AgregarPoliza
+2023/09/13 22:52:46 Inicio PolizasService::AgregarPoliza
+2023/09/13 22:52:46 Termina PolizasService::AgregarPoliza
+2023/09/13 22:52:46 Fin PolizasHandler::AgregarPoliza
+2023/09/13 22:52:46 Termina Main::Token
+2023/09/13 22:52:46 Finaliza Main::CORS
+2023/09/13 22:54:26 Inicio Main::CORS
+2023/09/13 22:54:26 Inicio Main::Token
+2023/09/13 22:54:26 Inicio EmpleadosHandler::EliminarGeneral
+2023/09/13 22:54:26 Inicio EmpleadosService::EliminarGeneral
+2023/09/13 22:54:26 Error al ejecutar la funcion fun_eliminargeneral()
+2023/09/13 22:54:26 %!(EXTRA *pq.Error=pq: el valor «12341231231» está fuera de rango para el tipo integer)
+2023/09/13 22:54:26 http: panic serving 10.59.21.109:53651: runtime error: invalid memory address or nil pointer dereference
+goroutine 18 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1854 +0xbf
+panic({0xcb0e20, 0xf62b10})
+	C:/Program Files/Go/src/runtime/panic.go:890 +0x263
+database/sql.(*Rows).close(0x0, {0x0, 0x0})
+	C:/Program Files/Go/src/database/sql/sql.go:3274 +0xa1
+database/sql.(*Rows).Close(0x0?)
+	C:/Program Files/Go/src/database/sql/sql.go:3270 +0x1d
+panic({0xcb0e20, 0xf62b10})
+	C:/Program Files/Go/src/runtime/panic.go:884 +0x213
+database/sql.(*Rows).Next(0x0)
+	C:/Program Files/Go/src/database/sql/sql.go:2951 +0x27
+main.go/services.EliminarGeneral(0xc000428068?, 0xd02d1d?)
+	C:/Users/mario.samaniego/Documents/CursoGo/GIT/ApiPolizas/api.polizas/services/EmpleadosService.go:112 +0x26f
+main.go/handlers.EliminarGeneral({0xd90da0?, 0xc00041c0e0}, 0xc000406600)
+	C:/Users/mario.samaniego/Documents/CursoGo/GIT/ApiPolizas/api.polizas/handlers/EmpleadosHandler.go:85 +0x109
+net/http.HandlerFunc.ServeHTTP(0xcc6ca0?, {0xd90da0?, 0xc00041c0e0?}, 0xc95c20?)
+	C:/Program Files/Go/src/net/http/server.go:2122 +0x2f
+main.Token.func1({0xd90da0?, 0xc00041c0e0}, 0xc000406600)
+	C:/Users/mario.samaniego/Documents/CursoGo/GIT/ApiPolizas/api.polizas/main.go:105 +0x64d
+net/http.HandlerFunc.ServeHTTP(0xd8eb00?, {0xd90da0?, 0xc00041c0e0?}, 0x1?)
+	C:/Program Files/Go/src/net/http/server.go:2122 +0x2f
+main.CORS.func1({0xd90da0, 0xc00041c0e0}, 0xc000404390?)
+	C:/Users/mario.samaniego/Documents/CursoGo/GIT/ApiPolizas/api.polizas/main.go:54 +0x457
+net/http.HandlerFunc.ServeHTTP(0xc000406500?, {0xd90da0?, 0xc00041c0e0?}, 0xc0001a19e8?)
+	C:/Program Files/Go/src/net/http/server.go:2122 +0x2f
+github.com/gorilla/mux.(*Router).ServeHTTP(0xc00009e000, {0xd90da0, 0xc00041c0e0}, 0xc000406400)
+	C:/Users/mario.samaniego/Documents/CursoGo/Go/pkg/mod/github.com/gorilla/mux@v1.8.0/mux.go:210 +0x1cf
+net/http.serverHandler.ServeHTTP({0xd8fd50?}, {0xd90da0, 0xc00041c0e0}, 0xc000406400)
+	C:/Program Files/Go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc0000ce000, {0xd90fd8, 0xc00009c930})
+	C:/Program Files/Go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	C:/Program Files/Go/src/net/http/server.go:3089 +0x5ed
+2023/09/13 22:54:26 Inicio Main::CORS
+2023/09/13 22:54:26 Inicio Main::Token
+2023/09/13 22:54:26 Inicio EmpleadosHandler::EliminarGeneral
+2023/09/13 22:54:26 Inicio EmpleadosService::EliminarGeneral
+2023/09/13 22:54:27 Error al ejecutar la funcion fun_eliminargeneral()
+2023/09/13 22:54:27 %!(EXTRA *pq.Error=pq: el valor «12341231231» está fuera de rango para el tipo integer)
+2023/09/13 22:54:27 http: panic serving 10.59.21.109:55143: runtime error: invalid memory address or nil pointer dereference
+goroutine 74 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1854 +0xbf
+panic({0xcb0e20, 0xf62b10})
+	C:/Program Files/Go/src/runtime/panic.go:890 +0x263
+database/sql.(*Rows).close(0x0, {0x0, 0x0})
+	C:/Program Files/Go/src/database/sql/sql.go:3274 +0xa1
+database/sql.(*Rows).Close(0x0?)
+	C:/Program Files/Go/src/database/sql/sql.go:3270 +0x1d
+panic({0xcb0e20, 0xf62b10})
+	C:/Program Files/Go/src/runtime/panic.go:884 +0x213
+database/sql.(*Rows).Next(0x0)
+	C:/Program Files/Go/src/database/sql/sql.go:2951 +0x27
+main.go/services.EliminarGeneral(0xc00039e168?, 0xd02d1d?)
+	C:/Users/mario.samaniego/Documents/CursoGo/GIT/ApiPolizas/api.polizas/services/EmpleadosService.go:112 +0x26f
+main.go/handlers.EliminarGeneral({0xd90da0?, 0xc000350000}, 0xc000406100)
+	C:/Users/mario.samaniego/Documents/CursoGo/GIT/ApiPolizas/api.polizas/handlers/EmpleadosHandler.go:85 +0x109
+net/http.HandlerFunc.ServeHTTP(0xcc6ca0?, {0xd90da0?, 0xc000350000?}, 0xc95c20?)
+	C:/Program Files/Go/src/net/http/server.go:2122 +0x2f
+main.Token.func1({0xd90da0?, 0xc000350000}, 0xc000406100)
+	C:/Users/mario.samaniego/Documents/CursoGo/GIT/ApiPolizas/api.polizas/main.go:105 +0x64d
+net/http.HandlerFunc.ServeHTTP(0xd8eb00?, {0xd90da0?, 0xc000350000?}, 0x1?)
+	C:/Program Files/Go/src/net/http/server.go:2122 +0x2f
+main.CORS.func1({0xd90da0, 0xc000350000}, 0xc0002ae330?)
+	C:/Users/mario.samaniego/Documents/CursoGo/GIT/ApiPolizas/api.polizas/main.go:54 +0x457
+net/http.HandlerFunc.ServeHTTP(0xc000406000?, {0xd90da0?, 0xc000350000?}, 0xc0000799e8?)
+	C:/Program Files/Go/src/net/http/server.go:2122 +0x2f
+github.com/gorilla/mux.(*Router).ServeHTTP(0xc00009e000, {0xd90da0, 0xc000350000}, 0xc000154000)
+	C:/Users/mario.samaniego/Documents/CursoGo/Go/pkg/mod/github.com/gorilla/mux@v1.8.0/mux.go:210 +0x1cf
+net/http.serverHandler.ServeHTTP({0xd8fd50?}, {0xd90da0, 0xc000350000}, 0xc000154000)
+	C:/Program Files/Go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc000184120, {0xd90fd8, 0xc00009c930})
+	C:/Program Files/Go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	C:/Program Files/Go/src/net/http/server.go:3089 +0x5ed
+2023/09/13 22:54:38 Inicio Main::CORS
+2023/09/13 22:54:38 Inicio Main::Token
+2023/09/13 22:54:38 Inicio EmpleadosHandler::EliminarGeneral
+2023/09/13 22:54:38 Inicio EmpleadosService::EliminarGeneral
+2023/09/13 22:54:38 Termina EmpleadosService::EliminarGeneral
+2023/09/13 22:54:38 Fin EmpleadosHandler::EliminarGeneral
+2023/09/13 22:54:38 Termina Main::Token
+2023/09/13 22:54:38 Finaliza Main::CORS
+2023/09/13 22:55:35 Inicio Main::CORS
+2023/09/13 22:55:35 Inicio Main::Token
+2023/09/13 22:55:36 Inicio PolizasHandler::ActualizarPoliza
+2023/09/13 22:55:36 Body recibido con Exitoso
+2023/09/13 22:55:36 Inicio PolizasService::ActualizarPoliza
+2023/09/13 22:55:36 Termina PolizasService::ActualizarPoliza
+2023/09/13 22:55:36 Fin PolizasHandler::ActualizarPoliza
+2023/09/13 22:55:36 Termina Main::Token
+2023/09/13 22:55:36 Finaliza Main::CORS
+2023/09/13 22:55:44 Inicio Main::CORS
+2023/09/13 22:55:44 Inicio Main::Token
+2023/09/13 22:55:45 Inicio PolizasHandler::ActualizarPoliza
+2023/09/13 22:55:45 Body recibido con Exitoso
+2023/09/13 22:55:45 Inicio PolizasService::ActualizarPoliza
+2023/09/13 22:55:45 Termina PolizasService::ActualizarPoliza
+2023/09/13 22:55:45 Fin PolizasHandler::ActualizarPoliza
+2023/09/13 22:55:45 Termina Main::Token
+2023/09/13 22:55:45 Finaliza Main::CORS
+2023/09/13 22:56:55 Inicio Main::CORS
+2023/09/13 22:56:55 Inicio Main::Token
+2023/09/13 22:56:56 Inicio EmpleadosHandler::ConsultarEmpleados
+2023/09/13 22:56:56 Inicio EmpleadosService::ConsultarEmpleados
+2023/09/13 22:56:56 Fin EmpleadosService::ConsultarEmpleados
+2023/09/13 22:56:56 Fin EmpleadosHandler::ConsultarEmpleados
+2023/09/13 22:56:56 Termina Main::Token
+2023/09/13 22:56:56 Finaliza Main::CORS
+2023/09/13 22:57:34 Inicio Main::CORS
+2023/09/13 22:57:34 Inicio Main::Token
+2023/09/13 22:57:34 Inicio PolizasHandler::ConsultarPolizasEmpleado
+2023/09/13 22:57:34 Inicio PolizasService::ConsultarPolizasEmpleado
+2023/09/13 22:57:35 Fin PolizasHandler::ConsultarPolizasEmpleado
+2023/09/13 22:57:35 Termina Main::Token
+2023/09/13 22:57:35 Finaliza Main::CORS
+2023/09/13 22:59:37 Inicio Main::CORS
+2023/09/13 22:59:37 Inicio Main::Token
+2023/09/13 22:59:38 Inicio ArticulosHandler::ConsultarArticulos
+2023/09/13 22:59:38 Inicio ArticulosService::ConsultarArticulos
+2023/09/13 22:59:38 Fin ArticulosService::ConsultarEmpleados
+2023/09/13 22:59:38 Fin ArticulosHandler::ConsultarArticulos
+2023/09/13 22:59:38 Termina Main::Token
+2023/09/13 22:59:38 Finaliza Main::CORS
+2023/09/13 23:01:57 Inicio Main::CORS
+2023/09/13 23:01:57 Inicio Main::Token
+2023/09/13 23:01:57 Inicio EmpleadosHandler::AgregarEmpleado
+2023/09/13 23:01:57 Inicio EmpleadosService::AgregarEmpleado
+2023/09/13 23:01:57 Error al registrar al empleado,Empleado ya existe
+2023/09/13 23:01:57 Termina EmpleadosService::AgregarEmpleado
+2023/09/13 23:01:57 Fin EmpleadosHandler::AgregarEmpleado
+2023/09/13 23:01:57 Termina Main::Token
+2023/09/13 23:01:57 Finaliza Main::CORS
+2023/09/13 23:26:15 Inicio del api.polizas
+2023/09/13 23:26:25 Inicio Main::CORS
+2023/09/13 23:26:25 Inicio Main::Token
+2023/09/13 23:26:26 Inicio ArticulosHandler::ConsultarArticulos
+2023/09/13 23:26:26 Inicio ArticulosService::ConsultarArticulos
+2023/09/13 23:26:26 Fin ArticulosService::ConsultarEmpleados
+2023/09/13 23:26:26 Fin ArticulosHandler::ConsultarArticulos
+2023/09/13 23:26:26 Termina Main::Token
+2023/09/13 23:26:26 Finaliza Main::CORS
+2023/09/13 23:26:31 Inicio Main::CORS
+2023/09/13 23:26:31 Inicio Main::Token
+2023/09/13 23:26:31 Inicio EmpleadosHandler::AgregarEmpleado
+2023/09/13 23:26:31 Inicio EmpleadosService::AgregarEmpleado
+2023/09/13 23:26:31 Error al registrar al empleado,Empleado ya existe
+2023/09/13 23:26:31 Termina EmpleadosService::AgregarEmpleado
+2023/09/13 23:26:31 Fin EmpleadosHandler::AgregarEmpleado
+2023/09/13 23:26:31 Termina Main::Token
+2023/09/13 23:26:31 Finaliza Main::CORS

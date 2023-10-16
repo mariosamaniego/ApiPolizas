@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+
+    <link rel="stylesheet" href="app.component.css" />
+    <title>Empleados</title>
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="sidebar-header">
+        <h4>Administrador</h4>
+      </div>
+      <div class="sidebar-body">
+        <div class="sidebar-body-block" (click)="verEmpleados()">
+          <i class="bi bi-people"></i>
+          <p>Empleados</p>
+        </div>
+        <div class="sidebar-body-block" (click)="agregarEmpleado()">
+          <i class="bi bi-person-add"></i>
+          <p>Agregar Empleado</p>
+        </div>
+
+        <div class="sidebar-body-block" (click)="verArticulos()">
+          <i class="bi bi-box-seam"></i>
+          <p>Articulos</p>
+        </div>
+      </div>
+    </div>
+
+    <section>
+      <router-outlet></router-outlet>
+    </section>
+  </body>
+</html>

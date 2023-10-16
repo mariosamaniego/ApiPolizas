@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="formulario-poliza-header section-header">
+      <h4>Agregar Poliza</h4>
+
+      <p (click)="regresar()"><i class="bi bi-caret-left-fill"></i> Regresar</p>
+    </section>
+    <form action="" class="formulario-poliza">
+      <section class="formulario-poliza-body">
+        <div class="formulario-poliza-body-bloque">
+          <label for="">Id Poliza</label>
+          <input
+            type="number"
+            [(ngModel)]="IdPoliza"
+            [ngModelOptions]="{ standalone: true }"
+          />
+        </div>
+
+        <div class="formulario-poliza-body-bloque">
+          <label for="">Empleado</label>
+          <input
+            type="text"
+            [(ngModel)]="EmpleadoGenero"
+            [ngModelOptions]="{ standalone: true }"
+            disabled=""
+          />
+        </div>
+
+        <div class="formulario-poliza-body-bloque">
+          <label for="">Sku</label>
+          <select
+            name="select"
+            [(ngModel)]="Sku"
+            [ngModelOptions]="{ standalone: true }"
+          >
+            <option
+              *ngFor="let articulo of articulosData"
+              [value]="articulo.Sku"
+            >
+              {{ articulo.Sku }} - {{ articulo.Nombre }}
+            </option>
+          </select>
+        </div>
+
+        <div class="formulario-poliza-body-bloque">
+          <label for="">Cantidad</label>
+          <input
+            type="number"
+            [(ngModel)]="Cantidad"
+            [ngModelOptions]="{ standalone: true }"
+          />
+        </div>
+      </section>
+
+      <section class="formulario-poliza-buttom">
+        <button class="btn" (click)="guardarPoliza()">Añadir</button>
+      </section>
+    </form>
+  </body>
+</html>

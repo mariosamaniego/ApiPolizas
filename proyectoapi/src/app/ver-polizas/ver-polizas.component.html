@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="polizas">
+      <div class="polizas-section-header section-header">
+        <h4 class="section-title">Polizas de {{ nombreEmpleado }}</h4>
+        <p (click)="eliminarEmpleado(idEmpleado, '2')">
+          <i class="bi bi-x-circle-fill"></i> Eliminar Empleado
+        </p>
+        <p (click)="agregarPoliza()">
+          <i class="bi bi-plus-circle-fill"></i> Añadir Poliza
+        </p>
+        <p (click)="regresar()">
+          <i class="bi bi-caret-left-fill"></i> Regresar
+        </p>
+      </div>
+
+      <div
+        class="polizas-section-body section-body"
+        *ngIf="polizasData.length !== 0"
+      >
+        <div
+          class="tarjeta-poliza"
+          *ngFor="let poliza of polizasData"
+          [routerLink]="['/poliza', poliza.IdPoliza]"
+        >
+          <div class="tarjeta-poliza-header">
+            <h6>{{ poliza.IdPoliza }}</h6>
+          </div>
+          <hr />
+          <div class="tarjeta-poliza-body">
+            <p>{{ poliza.EmpleadoGenero }}</p>
+            <p>{{ poliza.Sku }}</p>
+            <p>{{ poliza.Cantidad }}</p>
+          </div>
+          <div class="tarjeta-poliza-footer"></div>
+        </div>
+      </div>
+
+      <div class="polizas-section-footer" *ngIf="polizasData.length === 0">
+        <p class="alert">El empleado {{ idEmpleado }} no tiene polizas!</p>
+      </div>
+    </section>
+  </body>
+</html>

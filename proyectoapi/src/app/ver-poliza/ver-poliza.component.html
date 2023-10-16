@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="poliza">
+      <div class="poliza-section-header section-header">
+        <h4 class="section-title">Poliza {{ idPoliza }}</h4>
+        <p (click)="regresar()">
+          <i class="bi bi-caret-left-fill"></i> Regresar
+        </p>
+      </div>
+
+      <div class="poliza-section-body">
+        <div class="poliza-section-body-column" *ngIf="polizaDataPoliza">
+          <div class="poliza-section-body-header">
+            <p (click)="eliminarPoliza(polizaDataPoliza.IdPoliza, '1')">
+              <i class="bi bi-x-circle-fill"></i> Eliminar Poliza
+            </p>
+          </div>
+
+          <div class="tarjeta-poliza">
+            <div class="tarjeta-poliza-header">
+              <h6>{{ polizaDataPoliza.IdPoliza }}</h6>
+            </div>
+            <hr />
+            <div class="tarjeta-poliza-body">
+              <p>{{ polizaDataPoliza.EmpleadoGenero }}</p>
+              <p>{{ sku }}</p>
+              <p>{{ cantidad }}</p>
+            </div>
+            <div class="tarjeta-poliza-footer"></div>
+          </div>
+        </div>
+
+        <div
+          class="poliza-section-body-column forms-columns"
+          *ngIf="polizaDataEmpleado"
+        >
+          <form action="" class="poliza-form">
+            <div class="poliza-form-column">
+              <div class="poliza-form-column-header">
+                <h4 class="subsection-title">Poliza</h4>
+              </div>
+
+              <div class="poliza-form-column-body">
+                <div class="row">
+                  <label for="">IdPoliza</label
+                  ><input
+                    type="number"
+                    [(ngModel)]="polizaDataPoliza.IdPoliza"
+                    [ngModelOptions]="{ standalone: true }"
+                    disabled
+                  />
+                </div>
+                <div class="row">
+                  <label for="">EmpleadoGenero</label
+                  ><input
+                    type="number"
+                    [(ngModel)]="polizaDataPoliza.EmpleadoGenero"
+                    [ngModelOptions]="{ standalone: true }"
+                    disabled
+                  />
+                </div>
+                <div class="row">
+                  <label for="">Sku</label
+                  ><select
+                    name="select"
+                    [(ngModel)]="polizaDataPoliza.Sku"
+                    [ngModelOptions]="{ standalone: true }"
+                  >
+                    <option
+                      *ngFor="let articulo of articulosData"
+                      [value]="articulo.Sku"
+                    >
+                      {{ articulo.Sku }} - {{ articulo.Nombre }}
+                    </option>
+                  </select>
+                </div>
+                <div class="row">
+                  <label for="">Cantidad</label
+                  ><input
+                    type="number"
+                    [(ngModel)]="polizaDataPoliza.Cantidad"
+                    [ngModelOptions]="{ standalone: true }"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="poliza-form-column-footer"></div>
+            </div>
+
+            <div class="poliza-form-column">
+              <div class="poliza-form-column-header">
+                <h4 class="subsection-title">Empleado</h4>
+              </div>
+
+              <div class="poliza-form-column-body">
+                <div class="row">
+                  <label for="">Nombre</label
+                  ><input
+                    type="text"
+                    [(ngModel)]="polizaDataEmpleado.Nombre"
+                    [ngModelOptions]="{ standalone: true }"
+                    required
+                  />
+                </div>
+                <div class="row">
+                  <label for="">Apellido</label
+                  ><input
+                    type="text"
+                    [(ngModel)]="polizaDataEmpleado.Apellido"
+                    [ngModelOptions]="{ standalone: true }"
+                    required
+                  />
+                </div>
+                <div class="row">
+                  <label for="">Puesto</label
+                  ><input
+                    type="text"
+                    [(ngModel)]="polizaDataEmpleado.Puesto"
+                    [ngModelOptions]="{ standalone: true }"
+                    required
+                  />
+                </div>
+                <div class="row">
+                  <button (click)="actualizarPoliza()" type="submit">
+                    Actualizar
+                  </button>
+                </div>
+              </div>
+
+              <div class="poliza-form-column-footer"></div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="poliza-section-footer"></div>
+    </section>
+  </body>
+</html>

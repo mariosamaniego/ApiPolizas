@@ -1,0 +1,10 @@
+{
+  "/api": {
+    "target": "http://10.59.21.109:3000/api/v1",
+    "secure": false,
+    "changeOrigin": false,
+    "pathRewrite": {
+      "^/api": ""
+    }
+  }
+}

@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.section-title {
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.section-body {
+  height: auto;
+  max-height: 400px;
+  overflow-y: scroll;
+}
+
+.section-body::-webkit-scrollbar {
+  width: 5px;
+}
+
+.section-body::-webkit-scrollbar-track {
+  background-color: rgb(255, 255, 255);
+}
+
+.section-body::-webkit-scrollbar-thumb {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.section-table {
+  width: 100%;
+  background-color: #1b1d1f;
+  border-collapse: collapse;
+  text-align: justify;
+}
+
+.section-table th,
+.section-table td {
+  padding: 1rem;
+  color: #fff;
+  font-size: 12px;
+}
+
+.section-table tr:hover td {
+  background-color: #fff;
+  color: #000;
+}
+
+.alert {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #e94d4d;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section-header p {
+  font-size: 12px;
+  color: #a2a2a2;
+  transition: 0.2s ease-in;
+}
+
+.section-header p:hover {
+  cursor: default;
+  color: #fff;
+}
+
+.subsection-title {
+  font-size: 12px;
+  color: #fff;
+}

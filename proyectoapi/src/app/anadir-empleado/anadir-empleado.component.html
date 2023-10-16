@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="formulario-empleados-header">
+      <h4>Agregar Empleado</h4>
+    </section>
+    <form action="" class="formulario-empleados">
+      <section class="formulario-empleados-body">
+        <div class="formulario-empleados-body-bloque">
+          <label for="">Id Empleado</label>
+          <input
+            type="number"
+            [(ngModel)]="formData.idempleado"
+            [ngModelOptions]="{ standalone: true }"
+          />
+        </div>
+
+        <div class="formulario-empleados-body-bloque">
+          <label for="">Nombre</label>
+          <input
+            type="text"
+            [(ngModel)]="formData.nombre"
+            [ngModelOptions]="{ standalone: true }"
+          />
+        </div>
+
+        <div class="formulario-empleados-body-bloque">
+          <label for="">Apellido</label>
+          <input
+            type="text"
+            [(ngModel)]="formData.apellido"
+            [ngModelOptions]="{ standalone: true }"
+          />
+        </div>
+
+        <div class="formulario-empleados-body-bloque">
+          <label for="">Puesto</label>
+          <input
+            type="text"
+            [(ngModel)]="formData.puesto"
+            [ngModelOptions]="{ standalone: true }"
+          />
+        </div>
+      </section>
+
+      <section class="formulario-empleados-buttom">
+        <button class="btn" (click)="guardarEmpleado()">Añadir</button>
+      </section>
+    </form>
+  </body>
+</html>
